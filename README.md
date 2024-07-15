@@ -183,3 +183,9 @@ To contribute to this project, please create a fork and send a pull request, or 
 ## Authors
 
 - [PABLO TORRES] - Initial development
+
+
+## Requirements
+
+- 3.2.1
+Programación Dinamica y Ejerccios

@@ -1,6 +1,7 @@
 package Ejercicio;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 /*
@@ -29,7 +30,19 @@ import java.util.List;
  */
 public class EjercicioUno {
 
-    // List<List<Integer>> subsets(List<Integer> set) {
+    public List<List<Integer>> subsets(List<Integer> set) {
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        result.add(new ArrayList<Integer>());
+        for (int i = 0; i < set.size(); i++) {
+            List<List<Integer>> newSubsets = new ArrayList<List<Integer>>();
+            for (List<Integer> subset : result) {
+                List<Integer> newSubset = new ArrayList<Integer>(subset);
+                newSubset.add(set.get(i));
+                newSubsets.add(newSubset);
+            }
+            result.addAll(newSubsets);
+        }
+        return result;
 
-    // }
+    }
 }
