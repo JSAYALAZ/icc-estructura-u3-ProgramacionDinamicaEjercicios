@@ -28,10 +28,4 @@ public class EjercicioDos {
             current.deleteCharAt(current.length() - 1);
         }
     }
-
-    public static void main(String[] args) {
-        EjercicioDos ed = new EjercicioDos();
-        System.out.println(ed.generateParenthesis(1)); // Output: ["()"]
-        System.out.println(ed.generateParenthesis(3)); // Output: ["((()))","(()())","(())()","()(())","()()()"]
-    }
 }
